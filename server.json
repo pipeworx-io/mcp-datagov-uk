@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.pipeworx-io/datagov-uk",
+  "title": "Datagov Uk",
+  "description": "data.gov.uk MCP — UK national open-data portal (CKAN API).",
+  "version": "0.1.0",
+  "websiteUrl": "https://pipeworx.io/packs/datagov-uk",
+  "repository": {
+    "url": "https://github.com/pipeworx-io/mcp-datagov-uk",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gateway.pipeworx.io/datagov-uk/mcp"
+    }
+  ]
+}
