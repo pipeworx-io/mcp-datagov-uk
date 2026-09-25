@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-datagov-uk",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "data.gov.uk MCP — UK national open-data portal (CKAN API).",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-ce10cf1577e98ecf5f539657ad307724aed25a40e5813736e9f61ae5f3787cb8",
-    "sourceCommit": "839ab210d969ef7f822cd747ea516f6bb49e9231"
+    "sourceHash": "v1-97fda2192b0c6a731f8d9566cb2698e16b72175702d89f8e8e5129c53c3cef8c",
+    "sourceCommit": "56d3c46c09bb3078ffdbdbca992a93f406bcd382"
   }
 }
