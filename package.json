@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-datagov-uk",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "data.gov.uk MCP — UK national open-data portal (CKAN API).",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-datagov-uk": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "datagov-uk"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-datagov-uk.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/datagov-uk",
   "pipeworx": {
-    "sourceHash": "v1-049509e94cc7531f86e7cef7343f3ea95c5c292b23ec17c1fbbde956214f3b5d",
-    "sourceCommit": "29fb434ca65fe0f61191f19c3502f583f5fb99d7"
+    "mode": "gateway",
+    "slug": "datagov-uk",
+    "gatewaySlug": "datagov-uk",
+    "sourceHash": "v1-cadb91ebf59f0e00b2e03ba8bbbc44eb83b13898eb3a4c8635d8c3642289d08a",
+    "sourceCommit": "0b3faaa4d85299a961dd86dea75a0f0e1dad280c"
   }
 }
